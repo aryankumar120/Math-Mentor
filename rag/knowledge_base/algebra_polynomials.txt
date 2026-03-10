@@ -1,0 +1,39 @@
+POLYNOMIALS
+
+Factor Theorem: (x - a) is a factor of p(x) if and only if p(a) = 0
+Remainder Theorem: When p(x) is divided by (x - a), remainder is p(a)
+
+For polynomial p(x) = a_n x^n + a_{n-1} x^{n-1} + ... + a_1 x + a_0:
+Vieta's Formulas for roots r1, r2, ..., rn:
+- Sum of roots = -a_{n-1} / a_n
+- Sum of products of pairs = a_{n-2} / a_n
+- Sum of products of triples = -a_{n-3} / a_n
+- Product of all roots = (-1)^n * a_0 / a_n
+
+Cubic ax^3 + bx^2 + cx + d with roots p, q, r:
+- p + q + r = -b/a
+- pq + qr + rp = c/a
+- pqr = -d/a
+
+Biquadratic ax^4 + bx^3 + cx^2 + dx + e with roots p,q,r,s:
+- p+q+r+s = -b/a
+- sum of products of pairs = c/a
+- sum of products of triples = -d/a
+- pqrs = e/a
+
+Useful algebraic identities:
+(a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3
+(a-b)^3 = a^3 - 3a^2b + 3ab^2 - b^3
+a^3 + b^3 = (a+b)(a^2 - ab + b^2)
+a^3 - b^3 = (a-b)(a^2 + ab + b^2)
+(a+b+c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca
+a^3 + b^3 + c^3 - 3abc = (a+b+c)(a^2+b^2+c^2-ab-bc-ca)
+If a + b + c = 0, then a^3 + b^3 + c^3 = 3abc
+
+Newton's power sums: S_k = r1^k + r2^k + ... + rn^k
+S_1 = sum of roots
+S_2 = (sum of roots)^2 - 2*(sum of products of pairs)
+
+Polynomial division: p(x) = q(x) * d(x) + r(x) where deg(r) < deg(d)
+
+Rational root theorem: rational root p/q (in lowest terms) has p dividing constant term and q dividing leading coefficient.

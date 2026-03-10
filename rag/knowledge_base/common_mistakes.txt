@@ -1,0 +1,45 @@
+COMMON MISTAKES IN JEE MATHEMATICS
+
+ALGEBRA:
+1. Quadratic formula: forgetting ± symbol; only writing one root
+2. Dividing both sides by a variable without considering if it could be zero
+   Wrong: x^2 = x → x = 1. Correct: x^2 - x = 0 → x(x-1) = 0 → x=0 or x=1
+3. sqrt(x^2) = |x|, NOT x. Forgetting the absolute value.
+4. log(a+b) ≠ log(a) + log(b). Log rules only apply to products/quotients.
+5. Binomial theorem: applying to negative or fractional n requires infinite series, not finite.
+6. Solving inequalities: multiplying/dividing by negative flips the inequality sign.
+7. In sequences: assuming common difference must be positive for AP.
+
+PROBABILITY:
+1. Confusing P(A|B) with P(B|A) — these are DIFFERENT.
+2. Forgetting to check if events are truly independent before using P(AB)=P(A)P(B).
+3. Mutually exclusive does NOT imply independent.
+4. Not accounting for all cases in total probability (hypotheses must be exhaustive).
+5. Double-counting: using addition rule without subtracting P(A∩B).
+6. Ordered vs unordered: in combination problems, mistakenly using permutations.
+7. Without replacement: forgetting the denominator changes after each draw.
+
+CALCULUS:
+1. Chain rule forgotten: d/dx[f(g(x))] requires multiplying by g'(x).
+2. Integration constant C forgotten in indefinite integrals.
+3. Order of operations in product rule: (uv)' = u'v + uv', NOT u'v'.
+4. L'Hopital applies ONLY to 0/0 or ∞/∞ forms.
+5. Limits at endpoints: when finding area under curve, including endpoints matters.
+6. Mixing up f'(c) = 0 (necessary condition) with it definitely being max/min.
+7. Definite integral can be negative; it represents net signed area.
+8. Swapping limits of integration changes sign: ∫_a^b = -∫_b^a.
+9. For parametric: d^2y/dx^2 ≠ (d^2y/dt^2)/(d^2x/dt^2). Must use correct formula.
+
+LINEAR ALGEBRA:
+1. Matrix multiplication is NOT commutative: AB ≠ BA in general.
+2. det(A+B) ≠ det(A) + det(B)
+3. det(kA) = k^n * det(A) for n×n matrix, not just k*det(A).
+4. Inverse exists only when det(A) ≠ 0.
+5. Solving Cramer's rule: must check determinant ≠ 0 first.
+6. Cross product is NOT commutative: a×b = -(b×a).
+7. a·b = 0 means perpendicular, but a×b = 0 means parallel.
+
+GENERAL:
+1. Domain restrictions: log requires positive argument, sqrt requires non-negative.
+2. Checking answer in original equation (especially squaring steps introduce extraneous solutions).
+3. Forgetting to consider all cases in absolute value problems.

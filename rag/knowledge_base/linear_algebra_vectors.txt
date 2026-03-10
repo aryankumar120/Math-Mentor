@@ -1,0 +1,55 @@
+VECTORS
+
+Vector basics:
+Magnitude of vector a = (a1, a2, a3): |a| = sqrt(a1^2 + a2^2 + a3^2)
+Unit vector: a_hat = a / |a|
+Zero vector: magnitude 0, no direction
+
+Dot (Scalar) Product:
+a · b = |a||b|cos(θ)
+a · b = a1*b1 + a2*b2 + a3*b3
+Properties: commutative, distributive
+a · a = |a|^2
+a ⊥ b ↔ a · b = 0
+Projection of a onto b: (a · b_hat) = (a · b) / |b|
+Vector projection: proj_b(a) = (a · b / |b|^2) * b
+
+Cross (Vector) Product:
+a × b = |a||b|sin(θ) * n_hat (n_hat perpendicular to both, by right-hand rule)
+a × b = |i  j  k |
+        |a1 a2 a3|
+        |b1 b2 b3|
+= (a2*b3 - a3*b2)i - (a1*b3 - a3*b1)j + (a1*b2 - a2*b1)k
+Properties: anti-commutative: a×b = -(b×a); NOT commutative
+a × a = 0
+a ∥ b ↔ a × b = 0
+|a × b| = area of parallelogram formed by a and b
+Area of triangle = (1/2)|a × b|
+
+Scalar Triple Product:
+[a, b, c] = a · (b × c) = |a1 a2 a3; b1 b2 b3; c1 c2 c3|
+= Volume of parallelepiped
+[a,b,c] = 0 ↔ a, b, c are coplanar
+[a,b,c] = [b,c,a] = [c,a,b] (cyclic)
+[a,b,c] = -[b,a,c] (swap any two: sign changes)
+
+Vector Triple Product:
+a × (b × c) = (a·c)b - (a·b)c  (BAC-CAB rule)
+
+Linear independence:
+a, b, c are linearly independent if no one of them is a linear combination of others.
+For 2D: non-parallel vectors are independent.
+For 3D: three vectors independent if their scalar triple product ≠ 0.
+
+Line through point A with direction d: r = A + t*d, t is parameter
+Line through A and B: d = B - A, r = A + t(B-A)
+Distance from point P to line through A with direction d:
+= |AP × d| / |d|
+
+Plane through point A with normal n: n · (r - A) = 0
+Plane with normal (a,b,c) through (x0,y0,z0): a(x-x0)+b(y-y0)+c(z-z0) = 0
+Distance from point P to plane: |n · (P - A)| / |n|
+
+Angle between vectors: cos θ = (a · b) / (|a| * |b|)
+Angle between lines: use direction vectors, take acute angle
+Angle between planes: use normal vectors, take acute angle

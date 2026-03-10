@@ -1,0 +1,51 @@
+SOLUTION TEMPLATES FOR COMMON JEE PROBLEM TYPES
+
+Template 1: Quadratic Root Problems
+Given: quadratic ax^2+bx+c=0, asked about roots
+Step 1: Compute D = b^2 - 4ac to determine nature
+Step 2: Use sum = -b/a, product = c/a
+Step 3: Construct the expression asked (e.g., alpha^2+beta^2 = (alpha+beta)^2 - 2*alpha*beta)
+
+Template 2: Integration (definite)
+Step 1: Identify if standard form or substitution needed
+Step 2: Check symmetry (even/odd function, interval [-a,a])
+Step 3: Apply King's property if integrand transforms nicely under x → a+b-x
+Step 4: Evaluate using antiderivative or reduction formula
+
+Template 3: Probability with Bayes
+Step 1: Identify all hypotheses Hi and their priors
+Step 2: Identify the observed event A and compute P(A|Hi) for each i
+Step 3: Compute P(A) = sum P(A|Hi)*P(Hi)
+Step 4: Apply P(Hi|A) = P(A|Hi)*P(Hi)/P(A)
+
+Template 4: Optimization with constraints
+Step 1: Write objective function and constraint
+Step 2: Use constraint to eliminate one variable
+Step 3: Take derivative of objective, set to zero
+Step 4: Verify using second derivative or boundary behavior
+Step 5: State the optimal value and where it occurs
+
+Template 5: Binomial Theorem - Finding Specific Terms
+Given (a+b)^n, find the term containing a^p or b^q or coefficient of x^r
+T_{r+1} = C(n,r) * a^(n-r) * b^r
+Set power equal to desired value, solve for r (must be non-negative integer)
+
+Template 6: Series Summation
+Step 1: Find the nth term T_n (if sum S_n given: T_n = S_n - S_{n-1})
+Step 2: Identify type: AP, GP, AGP, or telescoping
+Step 3: Apply appropriate summation formula
+Step 4: Verify with small cases (n=1: S_1 = T_1)
+
+Template 7: Trigonometric Equations
+Step 1: Simplify to sin θ = k, cos θ = k, or tan θ = k
+Step 2: Find principal solution (in [-π/2,π/2] for sin, [0,π] for cos)
+Step 3: General solution:
+   sin θ = sin α → θ = nπ + (-1)^n α
+   cos θ = cos α → θ = 2nπ ± α
+   tan θ = tan α → θ = nπ + α
+
+Template 8: Limits with Indeterminate Forms
+Step 1: Substitute x=a directly; if determinant, done
+Step 2: If 0/0 or ∞/∞, apply L'Hopital or factoring
+Step 3: For 1^∞: write as e^{lim (f(x)-1)*g(x)}
+Step 4: Confirm with series expansion if needed

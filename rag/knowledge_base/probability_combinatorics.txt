@@ -1,0 +1,51 @@
+PERMUTATIONS AND COMBINATIONS
+
+Fundamental Counting Principle:
+If task A can be done in m ways and task B in n ways, then A followed by B: m*n ways.
+
+Permutations (order matters):
+nPr = n! / (n-r)! = n*(n-1)*...*(n-r+1)
+Number of ways to arrange n things: n!
+Number of ways to arrange r from n: nPr
+
+Combinations (order does not matter):
+nCr = n! / (r! * (n-r)!)
+nC0 = nCn = 1
+nCr = nC(n-r)  (symmetry)
+nCr + nC(r-1) = (n+1)Cr  (Pascal's identity)
+
+Multinomial coefficient:
+Arrange n objects where n1 are type 1, n2 type 2, ..., nk type k (n1+...+nk=n):
+n! / (n1! * n2! * ... * nk!)
+
+Combinations with repetition:
+Choose r from n types with repetition allowed: C(n+r-1, r)
+
+Circular permutations:
+Arrange n objects in a circle: (n-1)!
+If necklace (can flip): (n-1)!/2
+
+Restricted permutations:
+Always together: treat as single unit, multiply by arrangements within
+Never together: Total - always together
+At least one condition: use complement
+
+Derangements D_n (no element in original position):
+D_n = n! * sum_{k=0}^{n} (-1)^k / k!
+D_1 = 0, D_2 = 1, D_3 = 2, D_4 = 9, D_5 = 44
+Recurrence: D_n = (n-1)(D_{n-1} + D_{n-2})
+
+Inclusion-Exclusion Principle:
+|A union B| = |A| + |B| - |A intersect B|
+|A union B union C| = |A|+|B|+|C| - |AB| - |BC| - |CA| + |ABC|
+
+Stars and Bars:
+Number of non-negative integer solutions to x1+x2+...+xk = n: C(n+k-1, k-1)
+Number of positive integer solutions: C(n-1, k-1)
+
+Binomial Theorem:
+(a+b)^n = sum_{r=0}^{n} C(n,r) * a^(n-r) * b^r
+General term T_{r+1} = C(n,r) * a^(n-r) * b^r
+Middle term: if n even, T_{n/2+1}; if n odd, T_{(n+1)/2} and T_{(n+3)/2}
+Sum of coefficients in (a+b)^n: put a=b=1, get 2^n
+Sum of odd-position coefficients = sum of even-position = 2^(n-1)

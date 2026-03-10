@@ -1,0 +1,48 @@
+DOMAIN AND RANGE CONSTRAINTS
+
+Square root: sqrt(f(x)) requires f(x) >= 0
+Even root (2n-th root): f(x) >= 0
+Odd root (cube root etc.): f(x) can be any real number
+
+Logarithm: log_a(f(x)) requires f(x) > 0, base a > 0, a ≠ 1
+Natural log ln(f(x)): f(x) > 0
+
+Rational expression f(x)/g(x): g(x) ≠ 0
+
+Inverse trig domains:
+sin^{-1}(x): domain [-1, 1], range [-π/2, π/2]
+cos^{-1}(x): domain [-1, 1], range [0, π]
+tan^{-1}(x): domain all reals, range (-π/2, π/2)
+cot^{-1}(x): domain all reals, range (0, π)
+sec^{-1}(x): domain |x| >= 1, range [0,π] \ {π/2}
+csc^{-1}(x): domain |x| >= 1, range [-π/2,π/2] \ {0}
+
+Trigonometric functions:
+sin x, cos x: domain all reals, range [-1, 1]
+tan x, sec x: undefined at x = π/2 + nπ
+cot x, csc x: undefined at x = nπ
+
+Combined domain: intersection of all individual domain conditions.
+
+Common constraint errors:
+- f(x) can equal zero for log argument in original problem: check if equals 0 is excluded
+- Range vs domain: range is set of outputs, domain is set of inputs
+- After substitution u = g(x), new domain in u must map back to x's domain
+
+Modulus/Absolute value:
+|f(x)| >= 0 always
+|x| < a means -a < x < a (requires a > 0)
+|x| > a means x > a or x < -a
+
+For JEE problems:
+- Always state domain restriction alongside the answer
+- When you find x, verify all expressions are defined at that x
+- For logarithmic inequalities involving log_a(f(x)) S log_a(g(x)):
+  must add conditions: f(x) > 0, g(x) > 0, and base a > 0, a ≠ 1
+
+Physical/contextual constraints:
+- Probability: 0 <= P <= 1
+- Length/area/volume: >= 0
+- Angles in geometry: 0 < θ < π (or as specified)
+- Number of items: non-negative integers
+- Time: typically t >= 0

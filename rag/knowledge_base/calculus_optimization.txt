@@ -1,0 +1,51 @@
+OPTIMIZATION (MAXIMA AND MINIMA)
+
+Critical Points:
+f'(x) = 0 or f'(x) undefined → candidates for max/min
+
+First Derivative Test:
+- f'(x) changes from + to - at x=c → local maximum at c
+- f'(x) changes from - to + at x=c → local minimum at c
+- f'(x) doesn't change sign → neither max nor min (inflection with slope 0)
+
+Second Derivative Test:
+At critical point c where f'(c) = 0:
+- f''(c) < 0 → local maximum
+- f''(c) > 0 → local minimum
+- f''(c) = 0 → inconclusive, use first derivative test
+
+Global (absolute) extrema on [a,b]:
+Evaluate f at all critical points in (a,b) and at endpoints f(a), f(b).
+Largest = global max, smallest = global min.
+
+Points of Inflection:
+Where f''(x) = 0 AND f'' changes sign.
+Concave up if f'' > 0, concave down if f'' < 0.
+
+Applied Optimization Strategy:
+1. Draw diagram, label variables
+2. Write objective function in terms of one variable
+3. Identify domain (constraints)
+4. Differentiate and set f'(x) = 0
+5. Verify it's max or min using second derivative or boundary check
+
+Common JEE optimization problems:
+- Rectangle of maximum area inscribed in circle of radius r: side = r*sqrt(2), area = 2r^2
+- Rectangle of given perimeter with maximum area: square (all sides equal)
+- Cylinder of maximum volume with given surface area: h = 2r (height = diameter)
+- Open box of maximum volume from square sheet: cut square corners of side x = L/6
+- Minimum distance from point to curve: set derivative of distance squared = 0
+
+Sum/Product extremum without calculus:
+For fixed sum a+b = S: product ab is maximum when a = b = S/2, max product = S^2/4
+For fixed product ab = P: sum a+b is minimum when a = b = sqrt(P), min sum = 2*sqrt(P)
+
+For three variables a+b+c = S (a,b,c > 0):
+Maximum of abc (by AM-GM): abc <= (S/3)^3, equality when a=b=c.
+
+Least value of sum with product constraint:
+a*b*c = k, minimize a+b+c: minimum is 3*k^(1/3), at a=b=c=k^(1/3)
+
+Monotonicity:
+f increasing on (a,b) if f'(x) > 0 for all x in (a,b)
+f decreasing on (a,b) if f'(x) < 0 for all x in (a,b)

@@ -1,0 +1,47 @@
+MATRICES AND DETERMINANTS
+
+Matrix operations:
+- Addition: (A+B)_{ij} = A_{ij} + B_{ij} (same dimensions)
+- Scalar multiplication: (kA)_{ij} = k*A_{ij}
+- Matrix product AB: (AB)_{ij} = sum_k A_{ik} * B_{kj} (cols of A = rows of B)
+- Transpose: (A^T)_{ij} = A_{ji}; (AB)^T = B^T * A^T
+- (A+B)^T = A^T + B^T; (kA)^T = k*A^T
+
+Square matrix properties:
+Symmetric: A^T = A
+Skew-symmetric: A^T = -A; diagonal elements must be zero
+A = (A+A^T)/2 + (A-A^T)/2 (symmetric + skew-symmetric decomposition)
+
+Determinant of 2x2: |a b; c d| = ad - bc
+Determinant of 3x3 (cofactor expansion along row 1):
+|a b c; d e f; g h i| = a(ei-fh) - b(di-fg) + c(dh-eg)
+
+Properties of determinants:
+|A^T| = |A|
+|AB| = |A|*|B|
+|kA| = k^n * |A| for n×n matrix
+Swapping rows/cols: sign changes
+Multiplying row/col by k: determinant multiplied by k
+Adding multiple of one row to another: determinant unchanged
+If two rows (or cols) are identical or proportional: |A| = 0
+|A| ≠ 0 ↔ A is invertible (non-singular)
+
+Inverse of matrix:
+A^{-1} = adj(A) / |A|
+adj(A) = transpose of cofactor matrix
+For 2x2: if A = [a b; c d], A^{-1} = (1/(ad-bc)) * [d -b; -a c]
+(AB)^{-1} = B^{-1} * A^{-1}
+
+Cramer's Rule for system AX = B (|A| ≠ 0):
+x_i = |A_i| / |A|, where A_i is A with ith column replaced by B
+
+System of equations consistency:
+Augmented matrix [A|B], apply row reduction:
+- |A| ≠ 0: unique solution
+- |A| = 0, rank(A) = rank([A|B]) < n: infinitely many solutions
+- rank(A) ≠ rank([A|B]): no solution (inconsistent)
+
+Eigenvalues: det(A - λI) = 0 (characteristic equation)
+For 2x2: λ^2 - tr(A)*λ + |A| = 0
+tr(A) = sum of eigenvalues, |A| = product of eigenvalues
+If A has eigenvalue λ, then A^n has eigenvalue λ^n

@@ -1,0 +1,44 @@
+PROBABILITY FUNDAMENTALS
+
+Sample space S: set of all possible outcomes
+Event A: subset of S
+P(A) = favorable outcomes / total outcomes (classical definition)
+
+Axioms of probability:
+1. P(A) >= 0 for any event A
+2. P(S) = 1
+3. For mutually exclusive events: P(A union B) = P(A) + P(B)
+
+Addition Rule:
+P(A union B) = P(A) + P(B) - P(A intersection B)
+If A and B are mutually exclusive: P(A union B) = P(A) + P(B)
+
+Complement: P(A') = 1 - P(A)
+
+Conditional Probability:
+P(A|B) = P(A intersection B) / P(B), where P(B) > 0
+Read as: probability of A given B has occurred
+
+Multiplication Rule:
+P(A intersection B) = P(A|B) * P(B) = P(B|A) * P(A)
+
+Independence:
+A and B are independent if P(A intersection B) = P(A) * P(B)
+Equivalently: P(A|B) = P(A) or P(B|A) = P(B)
+Note: mutually exclusive events with nonzero probability are NOT independent
+
+Law of Total Probability:
+If B1, B2, ..., Bn partition S:
+P(A) = P(A|B1)*P(B1) + P(A|B2)*P(B2) + ... + P(A|Bn)*P(Bn)
+
+Bayes' Theorem:
+P(Bi|A) = P(A|Bi)*P(Bi) / [sum_j P(A|Bj)*P(Bj)]
+P(Bi|A) = P(A|Bi)*P(Bi) / P(A)
+
+Odds:
+Odds in favor of A = P(A) / P(A') = P(A) / (1 - P(A))
+If odds are m:n, then P(A) = m/(m+n)
+
+Geometric probability:
+P = favorable length (area, volume) / total length (area, volume)
+Used when outcomes are continuous and uniform.

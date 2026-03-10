@@ -1,0 +1,55 @@
+DIFFERENTIATION
+
+Basic Rules:
+d/dx [c] = 0
+d/dx [x^n] = nx^(n-1)
+d/dx [e^x] = e^x
+d/dx [a^x] = a^x * ln(a)
+d/dx [ln x] = 1/x
+d/dx [log_a x] = 1/(x*ln a)
+d/dx [sin x] = cos x
+d/dx [cos x] = -sin x
+d/dx [tan x] = sec^2 x
+d/dx [cot x] = -csc^2 x
+d/dx [sec x] = sec x * tan x
+d/dx [csc x] = -csc x * cot x
+d/dx [sin^{-1} x] = 1/sqrt(1-x^2)
+d/dx [cos^{-1} x] = -1/sqrt(1-x^2)
+d/dx [tan^{-1} x] = 1/(1+x^2)
+
+Sum rule: (f+g)' = f' + g'
+Product rule: (fg)' = f'g + fg'
+Quotient rule: (f/g)' = (f'g - fg') / g^2
+Chain rule: d/dx[f(g(x))] = f'(g(x)) * g'(x)
+
+Implicit differentiation:
+Differentiate both sides with respect to x, treat y as function of x.
+Every dy term gets a dy/dx factor.
+Solve for dy/dx.
+
+Logarithmic differentiation:
+For y = f(x)^g(x): take ln both sides, ln y = g(x)*ln f(x), differentiate.
+Useful for products of many terms.
+
+Higher order derivatives:
+f''(x) = d^2y/dx^2 = rate of change of f'
+f''(x) > 0 at a point means concave up
+f''(x) < 0 at a point means concave down
+
+Leibniz formula for nth derivative of product:
+(uv)^(n) = sum_{k=0}^{n} C(n,k) * u^(k) * v^(n-k)
+
+Parametric derivatives:
+dy/dx = (dy/dt) / (dx/dt)
+d^2y/dx^2 = d/dx[dy/dx] = (d/dt[dy/dx]) / (dx/dt)
+
+Rate of change problems:
+Related rates: differentiate equation with respect to time t, use chain rule.
+All quantities are functions of t; state explicitly what is given and what to find.
+
+Mean Value Theorem (MVT):
+If f continuous on [a,b], differentiable on (a,b), then there exists c in (a,b) such that:
+f'(c) = (f(b) - f(a)) / (b - a)
+
+Rolle's Theorem:
+If f(a) = f(b), then there exists c in (a,b) with f'(c) = 0.

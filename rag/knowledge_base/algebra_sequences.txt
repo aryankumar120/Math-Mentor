@@ -1,0 +1,46 @@
+SEQUENCES AND SERIES
+
+Arithmetic Progression (AP):
+Terms: a, a+d, a+2d, ..., a+(n-1)d
+nth term: a_n = a + (n-1)d
+Sum of n terms: S_n = n/2 * (2a + (n-1)d) = n/2 * (first + last)
+Arithmetic mean of a and b: (a + b) / 2
+If a, b, c are in AP: 2b = a + c
+
+Geometric Progression (GP):
+Terms: a, ar, ar^2, ..., ar^(n-1)
+nth term: a_n = ar^(n-1)
+Sum of n terms: S_n = a(r^n - 1)/(r-1) for r != 1; S_n = na for r = 1
+Sum of infinite GP (|r| < 1): S = a / (1 - r)
+Geometric mean of a and b: sqrt(ab)
+If a, b, c are in GP: b^2 = ac
+
+Harmonic Progression (HP):
+Reciprocals form an AP: 1/a, 1/(a+d), 1/(a+2d), ...
+nth term: 1 / (a + (n-1)d)
+Harmonic mean of a and b: 2ab / (a + b)
+
+AM-GM-HM relationship: AM >= GM >= HM (for positive reals)
+AM * HM = GM^2
+
+Arithmetic-Geometric Progression (AGP):
+Sum of a, (a+d)r, (a+2d)r^2, ... use multiply-and-subtract method:
+S = a/(1-r) + dr/(1-r)^2 (for |r| < 1)
+
+Standard summation formulas:
+Sum of first n natural numbers: n(n+1)/2
+Sum of squares: n(n+1)(2n+1)/6
+Sum of cubes: [n(n+1)/2]^2
+Sum of first n odd numbers: n^2
+Sum of first n even numbers: n(n+1)
+
+Telescoping series: Sum (f(k+1) - f(k)) = f(n+1) - f(1)
+
+Useful tricks:
+- If S is series sum, compute rS and subtract to find closed form
+- For sum of 1/(k(k+1)): partial fractions 1/k - 1/(k+1), telescopes to 1 - 1/(n+1) = n/(n+1)
+- nth term of series found by T_n = S_n - S_{n-1} for n >= 2
+
+Infinite series:
+Sum of ar^k from k=0 to inf = a/(1-r) for |r| < 1
+Sum of k*r^{k-1} = 1/(1-r)^2 for |r| < 1

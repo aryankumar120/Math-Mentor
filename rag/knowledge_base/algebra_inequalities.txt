@@ -1,0 +1,49 @@
+INEQUALITIES
+
+AM-GM Inequality:
+For positive reals a1, a2, ..., an:
+(a1 + a2 + ... + an) / n >= (a1 * a2 * ... * an)^(1/n)
+Equality holds when all ai are equal.
+
+For two terms: (a + b)/2 >= sqrt(ab), equality when a = b
+For three terms: (a+b+c)/3 >= (abc)^(1/3)
+
+AM-GM application pattern:
+To find minimum of a/x + bx for x > 0:
+a/x + bx >= 2*sqrt(a/x * bx) = 2*sqrt(ab)
+Minimum = 2*sqrt(ab), achieved at x = sqrt(a/b)
+
+Cauchy-Schwarz Inequality:
+(a1^2 + a2^2 + ... + an^2)(b1^2 + b2^2 + ... + bn^2) >= (a1b1 + a2b2 + ... + anbn)^2
+Equality when a1/b1 = a2/b2 = ... = an/bn
+
+Cauchy-Schwarz in Engel/Titu form:
+a1^2/b1 + a2^2/b2 + ... + an^2/bn >= (a1+a2+...+an)^2 / (b1+b2+...+bn)
+
+Triangle inequality: |a + b| <= |a| + |b|
+Reverse triangle: |a - b| >= ||a| - |b||
+
+Modulus inequalities solving:
+|x - a| < r means -r < x - a < r, so a - r < x < a + r
+|x - a| > r means x < a - r or x > a + r
+|x - a| <= |x - b| means x is closer to a than b: x <= (a+b)/2 (if a < b)
+
+Polynomial inequality f(x) > 0:
+1. Find all real roots
+2. Order them: r1 < r2 < ... < rk
+3. Check sign in each interval
+4. For even multiplicity root, sign does not change; odd multiplicity, sign changes
+
+Solving rational inequality P(x)/Q(x) > 0:
+Never multiply by Q(x) without knowing its sign; instead find zeros of P and Q, make sign chart.
+
+Logarithmic inequalities:
+log_a(f(x)) > log_a(g(x)):
+- If a > 1: f(x) > g(x) > 0
+- If 0 < a < 1: 0 < f(x) < g(x)
+Always check domain: arguments must be positive.
+
+Exponential inequalities:
+a^f(x) > a^g(x):
+- If a > 1: f(x) > g(x)
+- If 0 < a < 1: f(x) < g(x)

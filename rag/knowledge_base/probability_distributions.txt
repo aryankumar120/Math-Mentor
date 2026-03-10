@@ -1,0 +1,43 @@
+PROBABILITY DISTRIBUTIONS
+
+Binomial Distribution B(n, p):
+X = number of successes in n independent trials, each with success probability p
+P(X = k) = C(n,k) * p^k * (1-p)^(n-k), k = 0, 1, ..., n
+Mean E(X) = np
+Variance Var(X) = np(1-p) = npq where q = 1-p
+Standard deviation = sqrt(npq)
+Mode: if (n+1)p is integer, two modes at (n+1)p and (n+1)p-1; otherwise floor((n+1)p)
+
+Conditions for Binomial:
+- Fixed number of trials n
+- Each trial is independent
+- Only two outcomes (success/failure)
+- Probability of success p is constant
+
+Bernoulli Distribution (special case n=1):
+P(X=1) = p, P(X=0) = q=1-p
+Mean = p, Variance = pq
+
+Geometric Distribution:
+X = number of trials until first success
+P(X = k) = (1-p)^(k-1) * p, k = 1, 2, 3, ...
+Mean = 1/p, Variance = (1-p)/p^2
+Memoryless property: P(X > m+n | X > m) = P(X > n)
+
+Hypergeometric Distribution:
+N total items, K successes, n draws without replacement
+P(X=k) = C(K,k)*C(N-K,n-k) / C(N,n)
+Mean = nK/N, Variance = nK(N-K)(N-n) / (N^2(N-1))
+
+Poisson Distribution (approximation to Binomial when n large, p small):
+lambda = np
+P(X = k) = e^(-lambda) * lambda^k / k!, k = 0, 1, 2, ...
+Mean = Variance = lambda
+
+Expected Value and Variance:
+E(X) = sum_x x*P(X=x)
+E(aX + b) = aE(X) + b
+E(X + Y) = E(X) + E(Y) (always)
+Var(X) = E(X^2) - [E(X)]^2
+Var(aX + b) = a^2 * Var(X)
+Var(X + Y) = Var(X) + Var(Y) if X and Y are independent

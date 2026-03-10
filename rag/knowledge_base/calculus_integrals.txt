@@ -1,0 +1,51 @@
+INTEGRATION
+
+Standard Integrals:
+∫x^n dx = x^(n+1)/(n+1) + C (n ≠ -1)
+∫1/x dx = ln|x| + C
+∫e^x dx = e^x + C
+∫a^x dx = a^x/ln(a) + C
+∫sin x dx = -cos x + C
+∫cos x dx = sin x + C
+∫tan x dx = ln|sec x| + C = -ln|cos x| + C
+∫cot x dx = ln|sin x| + C
+∫sec x dx = ln|sec x + tan x| + C
+∫csc x dx = ln|csc x - cot x| + C
+∫sec^2 x dx = tan x + C
+∫csc^2 x dx = -cot x + C
+∫sec x tan x dx = sec x + C
+∫1/sqrt(1-x^2) dx = sin^{-1} x + C
+∫-1/sqrt(1-x^2) dx = cos^{-1} x + C
+∫1/(1+x^2) dx = tan^{-1} x + C
+∫1/sqrt(a^2-x^2) dx = sin^{-1}(x/a) + C
+∫1/(a^2+x^2) dx = (1/a)*tan^{-1}(x/a) + C
+∫1/sqrt(x^2±a^2) dx = ln|x + sqrt(x^2±a^2)| + C
+
+Integration by Substitution:
+∫f(g(x))*g'(x) dx: let u = g(x), du = g'(x)dx → ∫f(u)du
+Key: identify inner function u and check g'(x) appears as factor.
+
+Integration by Parts:
+∫u dv = uv - ∫v du
+ILATE order for choosing u: Inverse trig, Logarithm, Algebraic, Trigonometric, Exponential
+Repeated integration by parts: use tabular method for polynomial * (trig or exp)
+
+Partial Fractions:
+Linear distinct factors: A/(x-a) + B/(x-b) + ...
+Repeated linear factor (x-a)^n: A1/(x-a) + A2/(x-a)^2 + ... + An/(x-a)^n
+Irreducible quadratic (ax^2+bx+c): (Ax+B)/(ax^2+bx+c)
+
+Integration by completing square:
+∫1/(x^2+bx+c) dx: complete square → ∫1/((x+p)^2 ± q^2) dx, use standard form
+
+Definite integrals - properties:
+∫_a^b f(x)dx = -∫_b^a f(x)dx
+∫_a^b f(x)dx = ∫_a^c f(x)dx + ∫_c^b f(x)dx
+∫_a^b f(x)dx = ∫_a^b f(a+b-x)dx (King's property)
+∫_0^a f(x)dx = ∫_0^a f(a-x)dx
+∫_0^{2a} f(x)dx = 2∫_0^a f(x)dx if f(2a-x) = f(x), else 0
+∫_{-a}^a f(x)dx = 2∫_0^a f(x)dx if f even; 0 if f odd
+
+Reduction formulas:
+∫sin^n x dx = -sin^{n-1}x cosx/n + (n-1)/n ∫sin^{n-2}x dx
+Wallis formula: ∫_0^{π/2} sin^n x dx determined by parity of n

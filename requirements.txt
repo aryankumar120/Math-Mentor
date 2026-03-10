@@ -1,0 +1,8 @@
+streamlit
+groq
+sentence-transformers==2.7.0
+faiss-cpu
+python-dotenv
+numpy
+Pillow
+audio-recorder-streamlit
