@@ -17,6 +17,7 @@ A **Reliable Multimodal Math Mentor** — a multi-agent AI system that solves JE
 
 ## Architecture
 
+<img width="889" height="291" alt="Screenshot 2026-03-11 at 1 32 59 AM" src="https://github.com/user-attachments/assets/b758fd2a-027a-420c-ae28-4d457240e2a9" />
 
 
 ---
@@ -25,31 +26,31 @@ A **Reliable Multimodal Math Mentor** — a multi-agent AI system that solves JE
 
 ```
 Math Mentor/
-├── app.py                  # Streamlit UI + pipeline orchestration
-├── .env                    # Your API keys (not committed)
-├── .env.example            # Key template
+├── app.py                  
+├── .env                    
+├── .env.example            #Important to read before starting
 ├── requirements.txt
 │
 ├── agents/
-│   ├── parser_agent.py     # Parses & cleans raw input
-│   ├── router_agent.py     # Classifies topic & strategy
-│   ├── solver_agent.py     # Solves using RAG + memory
-│   ├── verifier_agent.py   # Verifies correctness
-│   └── explainer_agent.py  # Generates explanation
+│   ├── parser_agent.py     
+│   ├── router_agent.py     
+│   ├── solver_agent.py     
+│   ├── verifier_agent.py   
+│   └── explainer_agent.py  
 │
 ├── rag/
-│   ├── knowledge_base/     # 17 domain .txt files
-│   ├── embedder.py         # Builds FAISS index from KB
-│   └── retriever.py        # Semantic search at query time
+│   ├── knowledge_base/     
+│   ├── embedder.py         
+│   └── retriever.py        
 │
 ├── memory/
-│   └── store.py            # Interaction store + similarity search
+│   └── store.py           
 │
 ├── utils/
-│   ├── ocr.py              # Image → text via Groq vision
-│   └── audio.py            # Audio → text via Groq Whisper
+│   ├── ocr.py              
+│   └── audio.py            
 │
-└── data/                   # Generated at runtime (gitignored)
+└── data/                   
     ├── memory.json
     └── memory_index.bin
 ```
@@ -98,7 +99,6 @@ python -m rag.embedder
 streamlit run app.py
 ```
 
-Open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ---
 
