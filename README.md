@@ -19,42 +19,6 @@ A **Reliable Multimodal Math Mentor** — a multi-agent AI system that solves JE
 
 <img width="889" height="291" alt="Screenshot 2026-03-11 at 1 32 59 AM" src="https://github.com/user-attachments/assets/b758fd2a-027a-420c-ae28-4d457240e2a9" />
 
-
----
-
-## Project Structure
-
-```
-Math Mentor/
-├── app.py                  
-├── .env                    
-├── .env.example            #Important to read before starting
-├── requirements.txt
-│
-├── agents/
-│   ├── parser_agent.py     
-│   ├── router_agent.py     
-│   ├── solver_agent.py     
-│   ├── verifier_agent.py   
-│   └── explainer_agent.py  
-│
-├── rag/
-│   ├── knowledge_base/     
-│   ├── embedder.py         
-│   └── retriever.py        
-│
-├── memory/
-│   └── store.py           
-│
-├── utils/
-│   ├── ocr.py              
-│   └── audio.py            
-│
-└── data/                   
-    ├── memory.json
-    └── memory_index.bin
-```
-
 ---
 
 ## Setup & Run
